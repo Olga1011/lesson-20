@@ -5,10 +5,16 @@
     box-sizing: border-box;
 }
 
-.container {
+.btn-menu {
     background-color: whitesmoke;
     margin: 0 auto;
     width: 30%;
+}
+
+.btn-menu__item {
+    border-radius: 20%;
+    width: 30%;
+    height: 30px;
 }
 
 
@@ -24,8 +30,4 @@
     background-color: red;
 }
 
-.button {
-    border-radius: 20%;
-    width: 30%;
-    height: 30px;
-}
+

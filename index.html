@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
     <script src="./index.js" defer></script>
-    <h1>Events home work</h1>
-    <input type="button" class="blue button" onclick="displayPhrase()" value="First">
-    <input id="button2" type="button" class="green button" value="Second">
-    <input id="button3" type="button" class="red button" value="Third">
-    <br>
+    <div class="btn-menu" id="menu">
+        <h1>Events home work</h1>
+        <button class="btn-menu__item red" data-action="first">First</button>
+        <button class="btn-menu__item green" data-action="second">Second</button>
+        <button class="btn-menu__item blue" data-action="third">Third</button>
+        <br>
     <span id="demo">Please click on any button</span>
-    
-</div>
+      </div>
     
 </body>
 </html>

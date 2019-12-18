@@ -1,14 +1,36 @@
-console.log('displayPhrase')
-function displayPhrase() {
-    document.getElementById("demo").innerHTML = 'You clicked the First button';
-}
 
-button2.onclick = function() {
-    document.getElementById("demo").innerHTML = 'You clicked the Second button';
-}
 
-function handler() {
-    document.getElementById('demo').innerHTML = 'You clicked the Fird button';
-}
+  class Menu {
+    constructor(elem) {
+      this._elem = elem;
+      elem.onclick = this.onClick.bind(this); 
+    }
 
-document.getElementById('button3').addEventListener("click", handler);
+    first() {
+     
+        document.getElementById("demo").innerHTML = ('You clicked the first button');
+    }
+
+    second() {
+        document.getElementById("demo").innerHTML = ('You clicked the second button');
+    }
+
+    third() {
+        document.getElementById("demo").innerHTML = ('You clicked the third button');
+    }
+
+    onClick(event) {
+      let action = event.target.dataset.action;
+      if (action) {
+        this[action]();
+      }
+    };
+  }
+
+  new Menu(menu);
+
+ 
+   
+
+
+    
